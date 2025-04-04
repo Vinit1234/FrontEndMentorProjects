@@ -60,6 +60,16 @@ article{
     border-radius: 10px;
 }
 
+article>h2{
+    line-height: 120%;
+    font-size: 22px;
+    color: var(--dark-accent);
+}
+article>p{
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: var(--mid-accent);
+}
 
 
 
