@@ -60,6 +60,9 @@ article{
     border-radius: 10px;
 }
 
+/* ---------------------------------- */
+/* Typography  specifications*/
+
 article>h2{
     line-height: 120%;
     font-size: 22px;
@@ -71,6 +74,34 @@ article>p{
     color: var(--mid-accent);
 }
 
+/* ---------------------------------- */
+/* Media Queries for larger devices*/
+
+@media screen and (420px<=width<=520px) {
+    .card{
+        width: 80%;
+    }
+} 
+/* @media screen and (520px<width<=680px) {
+    .card{
+        width: 60%;
+    }
+} 
+@media screen and (680px<width<=1020px) {
+    .card{
+        width: 40%;
+    }
+} 
+@media screen and (width>1020px) {
+    .card{
+        width: 20%;
+    }
+}  */
+@media screen and (width>520px) {
+    .card{
+        width: 280px;
+    }
+} 
 
 
 
