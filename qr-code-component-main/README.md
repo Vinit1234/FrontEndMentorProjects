@@ -26,7 +26,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live QR Code Component](https://vinit1234.github.io/FrontEndMentorProjects/qr-code-component-main/index.html)
 
 ## My process
 
@@ -43,6 +43,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Refering to Figma Design
 - Setting up Git and GitHub repositories
 - Writing markdown for README.md files
+- Deploying project on Github Pages
 
 
 ### Continued development
