@@ -58,6 +58,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - All page content should be contained by landmarks <br/>
 ```<h1 class="visually-hidden">QR code component</h1>```
+Put heading tags inside semantic tags.
+
+- Overflow issues on <body> and <main> tags. Resolve as follows:
+  1. Set margin:0 on <body>
+  2. Apply flex on <body> directly to avoid setting height of 100vh on inner div
+    (which in turn causes overflow)
 
 
 ### Continued development
