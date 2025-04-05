@@ -56,6 +56,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
   Keep in mind that blind users can't just look at a web page and immediately understand its layout the way that a visual user can. Visual users can take in much information about the page layout without having to read all of the content. Blind users don't have that luxury. Screen readers read linearly, which means listening to the entire web page unless there is some other convenient way to get a "glimpse" of the page's layout and structure. It turns out that headings are a way to do that. Screen reader users can use keyboard shortcuts to navigate through the heading structure of a document
 
+- All page content should be contained by landmarks <br/>
+```<h1 class="visually-hidden">QR code component</h1>```
+
+
 ### Continued development
 
 Need more hands on practice on Flexbox implementation
