@@ -45,6 +45,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Writing markdown for README.md files
 - Deploying project on Github Pages
 
+## HTML report - errors/warnings resolved
+
+- Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).
+
+- Section lacks heading. Consider using "h2"-"h6" elements to add identifying headings to all sections.
+
 
 ### Continued development
 
