@@ -51,11 +51,19 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Section lacks heading. Consider using "h2"-"h6" elements to add identifying headings to all sections.
 
+- Page should contain a level-one heading h1.<br/>
+  Screen reader users can use keyboard shortcuts to navigate directly to the first h1, which, in principle, should allow them to jump directly to the main content of the web page. If there is no h1, or if the h1 appears somewhere other than at the start of the main content, screen reader users must listen to more of the web page to understand its structure, wasting valuable time.
+
+  Keep in mind that blind users can't just look at a web page and immediately understand its layout the way that a visual user can. Visual users can take in much information about the page layout without having to read all of the content. Blind users don't have that luxury. Screen readers read linearly, which means listening to the entire web page unless there is some other convenient way to get a "glimpse" of the page's layout and structure. It turns out that headings are a way to do that. Screen reader users can use keyboard shortcuts to navigate through the heading structure of a document
 
 ### Continued development
 
 Need more hands on practice on Flexbox implementation
 
+### Useful resources
+
+- [dequeuniversity](https://dequeuniversity.com/rules/axe/4.6/page-has-heading-one?application=axeAPI) - This helped me to understand why there should be level one heading ( h1)
+even if it is not needed to be present visually.
 
 ## Author
 
