@@ -28,6 +28,14 @@ body{
     margin: 0;
     font-size: 16px;
     font-family: 'Figtree';
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
 
@@ -68,6 +76,26 @@ body, .highlight{
 article>p{
     color: var(--Gray-500);
 }
+
+
+.box-1{
+    max-width: 70%;
+    
+}
+
+.box-2{
+    padding: 2rem;
+}
+
+.img-cover{
+    margin: 0;
+}
+
+.img-cover>img{
+    width: 100%;
+}
+
+
 
 footer{
     padding-top: 1rem;
