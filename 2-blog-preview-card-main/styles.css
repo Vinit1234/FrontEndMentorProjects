@@ -87,7 +87,7 @@ article>p{
 }
 
 .box{
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .img-cover{
@@ -106,7 +106,7 @@ article>p{
 
 .profile-pic{
     margin-right: 1rem;
-    width: 12%;
+    width: 10%;
 }
 
 .profile-pic>img{
@@ -132,6 +132,10 @@ article>p{
     border-right:  8px solid;
     border-bottom:  8px solid;
     border-left:  1px solid;
+}
+
+.card-meta{
+    padding-top: 0.5rem;
 }
 
 @media screen and (min-width:500px){
