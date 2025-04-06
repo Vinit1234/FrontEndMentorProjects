@@ -15,6 +15,7 @@
 --White: hsl(0, 0%, 100%);
 --Gray-500: hsl(0, 0%, 42%);
 --Gray-950: hsl(0, 0%, 7%);
+font-size: 16px;
 }
 
 
@@ -26,9 +27,8 @@
 
 body{
     margin: 0;
-    font-size: 16px;
     font-family: 'Figtree';
-
+    /* font-size: clamp(0.5rem, 1rem, 1.2rem); */
     
     display: flex;
     flex-direction: column;
@@ -122,7 +122,11 @@ article>p{
     border-left:  1px solid;
 }
 
-
+@media screen and (min-width:500px){
+    .card{
+        width: 400px;
+    }
+}
 
 footer{
     padding-top: 1rem;
