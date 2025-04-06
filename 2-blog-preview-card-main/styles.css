@@ -35,6 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: var(--Gray-950);
 
 }
 
@@ -76,6 +77,9 @@ article>p{
     color: var(--Gray-500);
 }
 
+.highlight{
+    padding: 0.5rem;
+}
 /* =========================== */
 /* Responsive sizes */
 .card{
@@ -110,8 +114,16 @@ article>p{
 }
 
 /* Card border schemes */
-.box, .img-cover {
+.box{
     border-radius: 20px;
+}
+
+.img-cover>img {
+    border-radius: 10px;
+}
+
+.highlight {
+    border-radius: 5px;
 }
 
 .box{
