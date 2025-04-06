@@ -44,7 +44,7 @@ body, .highlight{
     background-color: var(--Yellow);
 }
 
-.box-2{
+.box{
     background-color: var(--White);
 }
 
@@ -78,12 +78,12 @@ article>p{
 }
 
 
-.box-1{
+.card{
     max-width: 70%;
     
 }
 
-.box-2{
+.box{
     padding: 2rem;
 }
 
