@@ -39,17 +39,6 @@ body{
 }
 
 
-
-body, .highlight{
-    background-color: var(--Yellow);
-}
-
-.box{
-    background-color: var(--White);
-}
-
-
-
 /* Visually hide h1 but keep it available for screen readers */
 .visually-hidden {
     position: absolute;
@@ -64,6 +53,16 @@ body, .highlight{
   border: 0 !important;
 }
 
+/* =============================== */
+/* Typography and color schemes */
+
+body, .highlight{
+    background-color: var(--Yellow);
+}
+
+.box{
+    background-color: var(--White);
+}
 
 .highlight, .author>span{
     font-weight: 800;
@@ -77,10 +76,10 @@ article>p{
     color: var(--Gray-500);
 }
 
-
+/* =========================== */
+/* Responsive sizes */
 .card{
-    max-width: 70%;
-    
+    max-width: 90%;
 }
 
 .box{
@@ -94,6 +93,21 @@ article>p{
 .img-cover>img{
     width: 100%;
 }
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic{
+    margin-right: 1rem;
+    width: 15%;
+}
+
+.profile-pic>img{
+    width: 100%;
+}
+
 
 
 
