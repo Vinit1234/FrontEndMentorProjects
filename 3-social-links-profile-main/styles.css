@@ -80,11 +80,6 @@ body{
     padding: 0;
 }
 
-.nav-items{
-    background-color: var(--Grey-700);
-    padding: 0.8rem 2rem;
-    border-radius: 8px;
-}
 
 .nav-items+.nav-items{
     margin-top: 1rem;
@@ -95,6 +90,15 @@ body{
     color:var(--White);
     font-weight: 600;
     font-size: small;
+    display: block;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    background-color: var(--Grey-700);
+}
+
+.nav-links:hover, .nav-links:focus{
+    background-color: var(--Green);
+    color: var(--Grey-800);
 }
 
 /* .profile{
