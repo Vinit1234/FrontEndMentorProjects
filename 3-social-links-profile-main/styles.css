@@ -1,7 +1,55 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    font-size: 14px;
+}
 
 *{
+    box-sizing: border-box;
     border: 1px solid red;
 }
+
+/* Visually hide h1 but keep it available for screen readers */
+.visually-hidden {
+    position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+body{
+    margin: 0;
+}
+
+/* ======================================== */
+/* Typography and color scheme */
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-900);
+    color: var(--White);
+}
+
+.card{
+    background-color: var(--Grey-700);
+}
+
+.highlight-txt{
+    color: var(--Green);
+}
+
+/* ====================================== */
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
