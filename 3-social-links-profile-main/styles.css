@@ -1,0 +1,141 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    font-size: 14px;
+}
+
+/* @font-face {
+    font-family:'Inter' ;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  } */
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* Visually hide h1 but keep it available for screen readers */
+.visually-hidden {
+    position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+body{
+    margin: 0;
+}
+
+/* ======================================== */
+/* Typography and color scheme */
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-900);
+    color: var(--White);
+}
+
+.card{
+    background-color: var(--Grey-800);
+}
+
+.highlight-txt{
+    color: var(--Green);
+}
+
+.more-info{
+    color:lightgray;
+}
+
+.location{
+    font-weight: bold;
+}
+.more-info, .location{
+    font-size: 0.9rem;
+}
+
+.profile>h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.nav-links:hover, .nav-links:focus{
+    background-color: var(--Green);
+    color: var(--Grey-800);
+}
+/* ====================================== */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.profile>figure{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.profile-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* =========================== */
+/* Social media links */
+
+.nav-menu{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+.nav-items+.nav-items{
+    margin-top: 1rem;
+}
+
+.nav-links{
+    text-decoration: none;
+    color:var(--White);
+    font-weight: 600;
+    font-size: small;
+    display: block;
+    padding: 0.8rem 6rem;
+    border-radius: 8px;
+    background-color: var(--Grey-700);
+}
+
+
+.more-info, .nav-box{
+    margin-top: 2rem;
+}
+
+
+
+footer{
+    margin-top: 2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

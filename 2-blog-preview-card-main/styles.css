@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format("truetype");
+    font-style: normal;
+    /* font-weight: 500 800; */
+}
+
+:root{
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+font-size: 16px;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    margin: 0;
+    font-family: 'Figtree';
+    /* font-size: clamp(0.5rem, 1rem, 1.2rem); */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--Gray-950);
+
+}
+
+
+/* Visually hide h1 but keep it available for screen readers */
+.visually-hidden {
+    position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* =============================== */
+/* Typography and color schemes */
+
+body, .highlight{
+    background-color: var(--Yellow);
+}
+
+.box{
+    background-color: var(--White);
+}
+
+.highlight, .author>span{
+    font-weight: 800;
+}
+
+.author>span{
+    color: var(--Gray-950);
+}
+
+article>p{
+    color: var(--Gray-500);
+}
+
+.highlight{
+    padding: 0.5rem;
+}
+/* =========================== */
+/* Responsive sizes */
+.card{
+    max-width: 90%;
+}
+
+.box{
+    padding: 1.5rem;
+}
+
+.img-cover{
+    margin: 0;
+}
+
+.img-cover>img{
+    width: 100%;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.profile-pic{
+    margin-right: 1rem;
+    width: 10%;
+}
+
+.profile-pic>img{
+    width: 100%;
+}
+
+/* Card border schemes */
+.box{
+    border-radius: 20px;
+}
+
+.img-cover>img {
+    border-radius: 10px;
+}
+
+.highlight {
+    border-radius: 5px;
+}
+
+.box{
+    border-style: solid;
+    border-top: 1px solid;
+    border-right:  8px solid;
+    border-bottom:  8px solid;
+    border-left:  1px solid;
+}
+
+.card-meta{
+    padding-top: 0.5rem;
+}
+
+@media screen and (min-width:500px){
+    .card{
+        width: 400px;
+    }
+}
+
+footer{
+    padding-top: 1rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

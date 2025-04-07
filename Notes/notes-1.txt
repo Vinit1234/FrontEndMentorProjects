@@ -1,0 +1,21 @@
+## Git
+
+Git is the most commonly used version control system for web development projects. 
+It helps developers save and track changes in their code, allowing them to go back 
+to previous versions if needed. 
+It also supports collaboration, enabling multiple people to work on the same project.
+
+>> Git fundamentals:
+https://www.epicweb.dev/tutorials/git-fundamentals/commands/intro-to-git-fundamentals
+
+>> Git, GitHub, & GitHub Desktop for beginners: This is 20-minute tutorial:
+https://www.youtube.com/watch?v=8Dd7KRpKeaE
+
+>> Pro git book:
+https://git-scm.com/book/en/v2
+
+https://git-scm.com/docs
+
+
+
+
