@@ -48,6 +48,27 @@ body{
     color: var(--Green);
 }
 
+.more-info{
+    color:lightgray;
+}
+
+.location{
+    font-weight: bold;
+}
+.more-info, .location{
+    font-size: 0.9rem;
+}
+
+.profile>h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.nav-links:hover, .nav-links:focus{
+    background-color: var(--Green);
+    color: var(--Grey-800);
+}
 /* ====================================== */
 
 body{
@@ -99,30 +120,9 @@ body{
     background-color: var(--Grey-700);
 }
 
-.nav-links:hover, .nav-links:focus{
-    background-color: var(--Green);
-    color: var(--Grey-800);
-}
-
-.profile>h2{
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1.7rem;
-}
 
 .more-info, .nav-box{
     margin-top: 2rem;
-}
-
-.more-info{
-    color:lightgray;
-}
-
-.location{
-    font-weight: bold;
-}
-.more-info, .location{
-    font-size: 0.9rem;
 }
 
 
