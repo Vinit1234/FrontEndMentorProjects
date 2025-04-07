@@ -96,6 +96,7 @@ body{
     border-radius: 50%;
 }
 
+/* =========================== */
 /* Social media links */
 
 .nav-menu{
@@ -124,24 +125,6 @@ body{
 .more-info, .nav-box{
     margin-top: 2rem;
 }
-
-
-/* .profile{
-    display: flex;
-    flex-direction: column;
-}
-
-.profile>h2{
-    order: 2;
-}
-
-.profile>figure{
-    order: 1;
-}
-
-.location{
-    order: 3;
-} */
 
 
 
