@@ -9,7 +9,7 @@
 
 *{
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* Visually hide h1 but keep it available for screen readers */
@@ -59,7 +59,7 @@ body{
 }
 
 .card{
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -71,6 +71,30 @@ body{
 .profile-img{
     width: 100%;
     border-radius: 50%;
+}
+
+/* Social media links */
+
+.nav-menu{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-items{
+    background-color: var(--Grey-700);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+}
+
+.nav-items+.nav-items{
+    margin-top: 1rem;
+}
+
+.nav-links{
+    text-decoration: none;
+    color:var(--White);
+    font-weight: 600;
+    font-size: small;
 }
 
 /* .profile{
