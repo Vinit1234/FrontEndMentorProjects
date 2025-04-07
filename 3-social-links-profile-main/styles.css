@@ -41,7 +41,7 @@ body{
 }
 
 .card{
-    background-color: var(--Grey-700);
+    background-color: var(--Grey-800);
 }
 
 .highlight-txt{
@@ -63,6 +63,16 @@ body{
     text-align: center;
 }
 
+.profile>figure{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.profile-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
 /* .profile{
     display: flex;
     flex-direction: column;
@@ -80,6 +90,11 @@ body{
     order: 3;
 } */
 
+
+
+footer{
+    margin-top: 2rem;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
