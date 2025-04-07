@@ -50,6 +50,36 @@ body{
 
 /* ====================================== */
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    padding: 1rem;
+    text-align: center;
+}
+
+/* .profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile>h2{
+    order: 2;
+}
+
+.profile>figure{
+    order: 1;
+}
+
+.location{
+    order: 3;
+} */
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

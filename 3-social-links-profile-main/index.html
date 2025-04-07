@@ -23,14 +23,14 @@
   <main class="card">
     <div class="box">
       <section class="profile">
-        <h2>Jessica Randall</h2>
-        <figure> 
-          <img src="./assets/images/avatar-jessica.jpeg" alt="">
+        <figure role="figure" aria-labelledby="profile image"> 
+          <img src="./assets/images/avatar-jessica.jpeg" alt="profile image">
         </figure>
-        <p class="highlight-txt">London, United Kingdom</p>
+        <h2 role="region" aria-labelledby="profile-name">Jessica Randall</h2>
+        <p class="highlight-txt" role="region" aria-labelledby="location">London, United Kingdom</p>
         <p>"Front-end developer and avid reader."</p>
       </section>
-      <nav class="menu">
+      <nav class="menu" role="navigation" aria-labelledby="social links">
         <ul>
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Frontend Mentor</a></li>
