@@ -176,6 +176,15 @@ footer {
     main{
         width: 600px;
         background-color: var(--White);
+        border-radius: 0.6rem;
+    }
+
+    .fig-block{
+        padding: 2rem;
+    }
+
+    #cover-img{
+        border-radius: 0.4rem;
     }
 
 }
