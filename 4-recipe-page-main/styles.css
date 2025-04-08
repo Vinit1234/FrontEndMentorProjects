@@ -161,3 +161,21 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/* Media Query for Larger Screens like Desktops */
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--Stone-100);
+        margin-top: 2rem;
+    }
+    main{
+        width: 600px;
+        background-color: var(--White);
+    }
+
+}
