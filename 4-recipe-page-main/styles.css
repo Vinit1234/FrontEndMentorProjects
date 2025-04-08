@@ -1,15 +1,54 @@
+:root{
 
-*{
-    /* border: 1px solid red; */
+    font-size: 16px;
 }
 
 
-
-
-
-footer{
- padding-top:2rem;
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* Visually hide h1 but keep it available for screen readers */
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+body{
+    margin: 0;
+}
+
+.recipe-content{
+    padding: 2rem;
+}
+
+.fig-block {
+    margin: 0;
+    padding: 0;
+}
+
+#cover-img{
+    width: 100%;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
