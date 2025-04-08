@@ -104,7 +104,7 @@ body {
   border-collapse: collapse;
 }
 
-.nutri-rows {
+.nutri-rows:not(:last-of-type) {
   border-bottom: 2px solid var(--Stone-150);
 }
 
