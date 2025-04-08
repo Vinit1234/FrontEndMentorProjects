@@ -55,7 +55,7 @@ body {
   line-height: 1.5rem;
 }
 
-.intro > h2,
+.recipe-title,
 .sub-heading {
   font-family: "YoungSerif", sans-serif;
   font-weight: 400;
@@ -69,7 +69,7 @@ body {
   font-weight: bold;
 }
 
-.intro > h2 {
+.recipe-title {
   color: var(--Stone-900);
   margin-top: 0;
   font-size: 2.2rem;

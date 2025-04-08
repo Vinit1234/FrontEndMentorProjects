@@ -81,6 +81,10 @@ Also if the page has single content it can be broken as:
 
 - Use `li>::marker` to give color to bullets of `<list>`
 
+- `<article>` must have heading
+
+
+
 
 
 ### Useful resources
