@@ -38,9 +38,24 @@
 
 body{
     margin: 0;
-    font-family: 'Outfit',sans-serif;
-    /* font-family: 'YoungSerif',sans-serif; */
+    
 }
+
+/* ===================================== */
+/* Typography */
+
+body{
+    font-family: 'Outfit',sans-serif;
+}
+
+.intro>h2, .sub-heading{
+    font-family: 'YoungSerif',sans-serif;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+/* ====================================== */
 
 .recipe-content{
     padding: 2rem;
@@ -54,6 +69,12 @@ body{
 #cover-img{
     width: 100%;
 }
+
+.nutrition-tbl{
+    width: 100%;
+}
+
+
 
 footer {
   padding-top: 2rem;
