@@ -83,7 +83,9 @@ Also if the page has single content it can be broken as:
 
 - `<article>` must have heading
 
+- Heading levels should only increase by one
 
+`<h4>Preparation time</h4>`
 
 
 

@@ -82,7 +82,7 @@ body {
     background-color: var(--Rose-50);
 }
 
-.preparation-time > h4 {
+.preparation-title {
   font-size: 1.2rem;
   color: var(--Rose-800);
 }
