@@ -142,6 +142,10 @@ body {
   width: 100%;
 }
 
+.nutri-rows>td{
+    padding: 1rem;
+}
+
 footer {
   padding-top: 2rem;
 }
