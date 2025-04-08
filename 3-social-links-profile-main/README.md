@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [See Solution](https://www.frontendmentor.io/solutions/responsive-social-links-profile-using-flex---mobile-first-approach-MOV3MwY-mO)
+- [See Live Site](https://vinit1234.github.io/FrontEndMentorProjects/3-social-links-profile-main/index.html)
 
 ## My process
 
