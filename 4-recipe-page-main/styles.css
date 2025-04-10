@@ -166,15 +166,22 @@ footer {
 /* Media Query for Larger Screens like Desktops */
 @media screen and (min-width:600px) {
     body{
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 2rem; */
+        
+        /* Removed unnecessary use of flex */
+        margin: 0;
+        padding: 2rem;
         background-color: var(--Stone-100);
-        margin-top: 2rem;
     }
     main{
-        width: 600px;
+        /* width: 600px; */
+        /* Fixes overflow issue */
+        max-width: 600px;
+        margin: 0 auto;
         background-color: var(--White);
         border-radius: 0.6rem;
     }
