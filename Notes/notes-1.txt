@@ -17,5 +17,115 @@ https://git-scm.com/book/en/v2
 https://git-scm.com/docs
 
 
+=================================================================================
+
+## Responsive Images
+Ref: https://web.dev/learn/design/responsive-images
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: cover|contain|cover;
+  object-position: top center;
+}
 
 
+<img
+ src="image.png"
+ alt="A description of the image."
+ loading="lazy"
+>
+
+<img
+ src="hero.jpg"
+ alt="A description of the image."
+ loading="eager"
+ fetchpriority="high"
+>
+
+
+>> preloading
+
+It's best to avoid preloading whenever possible by including
+ all images in the initial HTML file. However, some images may be unavailable,
+  such as images added by JavaScript or a CSS background image.
+
+You can use preloading to get the browser to fetch these important images ahead of time.
+ For really important images, you can combine this preloading with the fetchpriority attribute:
+
+<link rel="preload" href="hero.jpg" as="image" fetchpriority="high">
+
+
+NOTE: Again, use these attributes sparingly to avoid overriding the browser's prioritization 
+heuristics too often. Overusing them can cause performance degradation.
+
+Some browsers support preloading responsive images based on srcset, using the imagesrcset and imagesizes attributes. 
+For example:
+
+<link rel="preload" imagesrcset="hero_sm.jpg 1x hero_med.jpg 2x hero_lg.jpg 3x" as="image" fetchpriority="high">
+
+By excluding the href fallback, you can make sure browsers without srcset support still preload the correct image.
+
+<img
+ src="image.png"
+ alt="A description of the image."
+ loading="lazy"
+ decoding="async"
+>
+
+<img
+ src="hero.jpg"
+ alt="A description of the image."
+ loading="eager"
+ decoding="sync"
+>
+
+
+>> Responsive images with srcset
+
+ Add multiple versions of the same image at different sizes,
+  and use the srcset attribute to tell the browser these sizes exist and when to use them.
+
+    1. Width descriptor
+        <img
+         src="small-image.png"
+         alt="A description of the image."
+         loading="lazy"
+         decoding="async"
+         srcset="small-image.png 300w,
+          medium-image.png 600w,
+          large-image.png 1200w"
+        >
+
+    2. Sizes
+    
+    <img
+      src="small-image.png"
+      alt="A description of the image."
+      width="300"
+      height="200"
+      loading="lazy"
+      decoding="async"
+      srcset="small-image.png 300w,
+       medium-image.png 600w,
+       large-image.png 1200w"
+      sizes="(min-width: 66em) 33vw,
+       (min-width: 44em) 50vw,
+       100vw"
+    >
+
+
+    3. Pixel density descriptor
+
+    <img
+       src="small-image.png"
+       alt="A description of the image."
+       width="300"
+       height="200"
+       loading="lazy"
+       decoding="async"
+       srcset="small-image.png 1x,
+        medium-image.png 2x,
+        large-image.png 3x"
+      >

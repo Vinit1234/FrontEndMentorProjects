@@ -1,0 +1,197 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+/* Visually hide h1 but keep it available for screen readers */
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+body {
+  margin: 0;
+}
+
+/* ===================================== */
+/* Typography and color schemes */
+
+body {
+  font-family: "Outfit", sans-serif;
+  /* background-color: var(--Stone-100); */
+  color: var(--Stone-600);
+  line-height: 1.5rem;
+}
+
+.recipe-title,
+.sub-heading {
+  font-family: "YoungSerif", sans-serif;
+  font-weight: 400;
+}
+
+.sub-heading{
+    font-size: 1.5rem;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.recipe-title {
+  color: var(--Stone-900);
+  margin-top: 0;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  /* font-weight: 400; */
+}
+
+.preparation-time {
+    line-height: 1rem;
+    background-color: var(--Rose-50);
+}
+
+.preparation-title {
+  font-size: 1.2rem;
+  color: var(--Rose-800);
+}
+
+.sub-heading,
+.nutri-values {
+  color: var(--Brown-800);
+}
+
+/* hr{
+    color: var(--Stone-100);
+} */
+
+.hr-bottom {
+  border-bottom: 2px solid var(--Stone-150);
+}
+
+.nutrition-tbl {
+  border-collapse: collapse;
+}
+
+.nutri-rows:not(:last-of-type) {
+  border-bottom: 2px solid var(--Stone-150);
+}
+
+/* Colored bullets in list */
+.color-list>li::marker{
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+.color-list>li>p{
+    margin-left: 1rem;
+}
+
+/* ====================================== */
+
+.preparation-time {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.recipe-content {
+  padding: 2rem;
+}
+
+.fig-block {
+  margin: 0;
+  padding: 0;
+}
+
+#cover-img {
+  width: 100%;
+}
+
+ul,ol{
+    padding-left:1rem;
+}
+
+.nutrition-tbl {
+  width: 100%;
+}
+
+.nutri-rows>td{
+    padding: 1rem;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* Media Query for Larger Screens like Desktops */
+@media screen and (min-width:600px) {
+    body{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem; */
+        
+        /* Removed unnecessary use of flex */
+        margin: 0;
+        padding: 2rem;
+        background-color: var(--Stone-100);
+    }
+    main{
+        /* width: 600px; */
+        /* Fixes overflow issue */
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: var(--White);
+        border-radius: 0.6rem;
+    }
+
+    .fig-block{
+        padding: 2rem;
+    }
+
+    #cover-img{
+        border-radius: 0.4rem;
+    }
+
+}

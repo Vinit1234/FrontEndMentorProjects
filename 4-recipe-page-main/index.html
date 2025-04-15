@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Recipe page</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="visually-hidden">
+    <h1>Recipe page</h1>
+  </header>
+
+  <main>
+    <!-- Recipe: Cover image -->
+    <figure class="fig-block">
+      <img id="cover-img" src="assets/images/image-omelette.jpeg" alt="prepared omelette dish">
+    </figure>
+
+    <!-- Recipe: Text portion -->
+    <article class="recipe-content">
+      <h2 class="recipe-title">Simple Omelette Recipe</h2>
+      <section class="intro">
+        <h3 class="visually-hidden">Recipe in brief</h3>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </section>
+
+      <section class="preparation-time">
+        <h3 class="preparation-title bold-text">Preparation time</h3>
+        <ul>
+          <li><p><span class="bold-text">Total:</span> Approximately 10 minutes</p></li>
+          <li><p><span class="bold-text">Preparation:</span> 5 minutes</p></li>
+          <li><p><span class="bold-text">Cooking:</span> 5 minutes</p></li>
+        </ul>
+      </section>
+
+      <section class="ingredients hr-bottom">
+        <h3 class="sub-heading" >Ingredients</h3>
+        <ul class="color-list">
+          <li><p>2-3 large eggs</p></li>
+          <li><p>Salt, to taste</p></li>
+          <li><p>Pepper, to taste</p></li>
+          <li><p>1 tablespoon of butter or oil</p></li>
+          <li><p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p></li>
+        </ul>
+      </section>
+      <!-- <hr> -->
+
+      <section class="instructions hr-bottom">
+        <h3 class="sub-heading" >Instructions</h3>
+        <ol class="color-list">
+          <li><p><span class="bold-text">Beat the eggs:</span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</p></li>
+
+          <li><p><span class="bold-text">Heat the pan:</span>Place a non-stick frying pan over medium heat and add butter or oil.</p></li>
+          <li><p><span class="bold-text">Cook the omelette:</span>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</p></li>
+          <li><p><span class="bold-text">Add fillings (optional):</span>When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</p></li>
+          <li><p><span class="bold-text">Fold and serve:</span>As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</p></li>
+          <li><p><span class="bold-text">Enjoy:</span>Serve hot, with additional salt and pepper if needed.</p></li>
+        </ol>
+      </section>
+      <!-- <hr> -->
+
+      <section class="nutrition">
+        <h3 class="sub-heading" >Nutrition</h3>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <table class="nutrition-tbl">
+          <tr class="nutri-rows">
+            <td>Calories</td>
+            <td class="bold-text nutri-values">227kcal</td>
+          </tr>
+          <tr class="nutri-rows">
+            <td>Carbs</td>
+            <td class="bold-text nutri-values">0g</td>
+          </tr>
+          <tr class="nutri-rows">
+            <td>Protein</td>
+            <td class="bold-text nutri-values">20g</td>
+          </tr>
+          <tr class="nutri-rows">
+            <td>Fat</td>
+            <td class="bold-text nutri-values">22g</td>
+          </tr>
+        </table>
+      </section>
+
+    </article>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Vinit Sakhare</a>.
+    </div>
+  </footer>
+</body>
+</html>
