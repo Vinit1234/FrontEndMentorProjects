@@ -1,3 +1,37 @@
-body{
-    background-color: green;
+:root{
+    --primary-lyt: hsl(158, 36%, 37%);
+    --primary-dark: hsl(158, 42%, 18%);
+    --neutral-1: hsl(0, 0%, 100%);
+    --neutral-2: hsl(30, 38%, 92%);
+    --neutral-3:hsl(228, 12%, 48%);
+    --neutral-4: hsl(212, 21%, 14%);
 }
+
+
+// Color Scheme
+body{
+    background-color: var(--neutral-2);
+    color: var(--neutral-3);
+}
+
+.content{
+    background-color: var(--neutral-1);
+    
+    .content__heading{
+        color: var(--neutral-4);
+    }
+
+    .discount-price{
+        color: var(--primary-lyt);
+    }
+
+    .btn-add2cart{
+        background-color: var(--primary-lyt);
+        a{
+            color:var(--neutral-1);
+        }
+    }
+}
+
+
+// Typography
