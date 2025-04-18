@@ -1,0 +1,4 @@
+npm init -y
+npm install sass -D
+npm install parcel -D
+npm run dev
