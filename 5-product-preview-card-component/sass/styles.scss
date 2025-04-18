@@ -30,6 +30,10 @@ body{
 
     .btn-add2cart{
         background-color: var(--primary-lyt);
+        
+        &:hover{
+            background-color: var(--primary-dark);
+        }
         a{
             color:var(--neutral-1);
         }
@@ -66,3 +70,5 @@ body{
 
     
 }
+
+ 
