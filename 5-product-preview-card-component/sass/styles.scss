@@ -120,12 +120,29 @@ body {
     .btn-add2cart{
         width: 96%;
         height: 3rem;
-        border: 0;
         img{
             padding-right: 0.5rem;
         }
     }
   }
+}
+
+// borders
+
+.card{
+    border-radius: 10px;
+    
+    &__img-container{
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .btn-add2cart{
+        border: 0;
+        border-radius: 10px;
+    }
 }
 
 footer {
