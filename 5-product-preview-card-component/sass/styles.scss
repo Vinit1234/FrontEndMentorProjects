@@ -28,13 +28,11 @@ body {
   }
 
   .btn-add2cart {
-    background-color: var(--primary-lyt);
+      background-color: var(--primary-lyt);
+      color: var(--neutral-1);
 
     &:hover {
       background-color: var(--primary-dark);
-    }
-    a {
-      color: var(--neutral-1);
     }
   }
 }
@@ -64,6 +62,10 @@ body {
     font-family: "Fraunces", serif;
     font-weight: 700;
     font-size: 32px;
+  }
+
+  .btn-add2cart{
+    font-weight: 700;
   }
 }
 
