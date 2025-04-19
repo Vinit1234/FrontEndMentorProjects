@@ -10,6 +10,10 @@
   --neutral-4: hsl(212, 21%, 14%);
 }
 
+*{
+  box-sizing: border-box;
+}
+
 // Color Scheme
 body {
   background-color: var(--neutral-2);
@@ -88,7 +92,6 @@ body {
 
   &__img-container {
     margin: 0;
-    
     img {
         width: 100%;
         aspect-ratio: 9/6;
@@ -159,7 +162,13 @@ footer {
     max-width: 600px;
     display: flex;
 
+    .content{
+      width: 50%;
+    }
+
     &__img-container{
+      width: 50%;
+
       img{
         aspect-ratio: unset;
         object-fit: cover;

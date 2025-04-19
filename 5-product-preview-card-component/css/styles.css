@@ -9,6 +9,10 @@
   --neutral-4: #1c232b;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--neutral-2);
   color: var(--neutral-3);
@@ -140,6 +144,10 @@ footer {
   .card {
     max-width: 600px;
     display: flex;
+  }
+
+  .card .content, .card__img-container {
+    width: 50%;
   }
 
   .card__img-container img {
