@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://vinit1234.github.io/FrontEndMentorProjects/5-product-preview-card-component/index.html)
+- [Solution URL Here](https://github.com/Vinit1234/FrontEndMentorProjects/tree/develop/5-product-preview-card-component)
+- [Live Site URL Here](https://vinit1234.github.io/FrontEndMentorProjects/5-product-preview-card-component/index.html)
 
 ## My process
 
