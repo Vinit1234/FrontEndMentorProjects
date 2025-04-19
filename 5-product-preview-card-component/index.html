@@ -15,19 +15,13 @@
     <title>Frontend Mentor | Product preview card component</title>
     <!-- <link rel="stylesheet" href="sass/styles.scss" /> -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+
+    <header class="visually-hidden">
+      <h1 class="">Product Preview Card</h1>
+    </header>
+
     <main class="card">
       <!-- <div > -->
         <figure class="card__img-container">
@@ -40,9 +34,7 @@
             decoding="sync"
             srcset="./images/image-product-mobile.jpg 480w,
             ./images/image-product-desktop.jpg 600w "
-            sizes="(min-width: 66em) 33vw,
-                  (min-width: 44em) 50vw,
-                  100vw"
+            sizes="100vw"
           />
         </figure>
         <section class="content">

@@ -13,6 +13,19 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+}
+
 body {
   background-color: var(--neutral-2);
   color: var(--neutral-3);
@@ -134,6 +147,15 @@ body {
 .card .btn-add2cart {
   border: 0;
   border-radius: 10px;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 footer {
