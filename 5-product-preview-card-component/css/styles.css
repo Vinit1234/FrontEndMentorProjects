@@ -1,0 +1,182 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap";
+:root {
+  --primary-lyt: #3c8067;
+  --primary-dark: #1b4133;
+  --neutral-1: #fff;
+  --neutral-2: #f2ebe3;
+  --neutral-3: #6c7289;
+  --neutral-4: #1c232b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+}
+
+body {
+  background-color: var(--neutral-2);
+  color: var(--neutral-3);
+}
+
+.card {
+  background-color: var(--neutral-1);
+}
+
+.content .content__heading {
+  color: var(--neutral-4);
+}
+
+.content .discount-price {
+  color: var(--primary-lyt);
+}
+
+.content .btn-add2cart {
+  background-color: var(--primary-lyt);
+  color: var(--neutral-1);
+}
+
+.content .btn-add2cart:hover {
+  background-color: var(--primary-dark);
+}
+
+body {
+  font-optical-sizing: auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.content__tag {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 12px;
+}
+
+.content__heading {
+  text-transform: capitalize;
+}
+
+.content__heading, .content .discount-price {
+  font-family: Fraunces, serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.content .btn-add2cart {
+  font-weight: 700;
+}
+
+body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.card {
+  max-width: 96%;
+}
+
+.card__img-container {
+  margin: 0;
+}
+
+.card__img-container img {
+  aspect-ratio: 9 / 6;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  block-size: auto;
+}
+
+.card .content {
+  margin: 0;
+  padding: 2rem;
+}
+
+.card .content__heading {
+  margin-top: 0;
+}
+
+.card .content p {
+  line-height: 1.5rem;
+}
+
+.card .content .price-box {
+  padding-top: 2rem;
+}
+
+.card .content .price-box .real-price {
+  text-decoration: line-through;
+}
+
+.card .content .btn-add2cart {
+  width: 96%;
+  height: 3rem;
+}
+
+.card .content .btn-add2cart img {
+  padding-right: .5rem;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card__img-container img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .btn-add2cart {
+  border: 0;
+  border-radius: 10px;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+@media screen and (width >= 600px) {
+  .card {
+    max-width: 600px;
+    display: flex;
+  }
+
+  .card .content, .card__img-container {
+    width: 50%;
+  }
+
+  .card__img-container img {
+    aspect-ratio: unset;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+  }
+}

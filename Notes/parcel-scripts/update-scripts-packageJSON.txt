@@ -1,0 +1,8 @@
+Reference:
+https://youtu.be/Iw0cUEeaCy0?si=C2ITWE_HG6mS_-4K
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel .\\index.html --dist-dir dev --no-source-maps",
+    "build": "parcel .\\index --dir-dist dist --public-url .\\ --no-source-maps"
+  },
