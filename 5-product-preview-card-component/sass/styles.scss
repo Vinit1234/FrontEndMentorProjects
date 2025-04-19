@@ -148,3 +148,24 @@ body {
 footer {
   margin-top: 2rem;
 }
+
+
+// ======================================
+// For large screens like Desktop
+
+@media screen and (min-width:600px) {
+  .card{
+    max-width: 600px;
+    display: flex;
+
+    &__img-container{
+      img{
+        aspect-ratio: unset;
+        object-fit: cover;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+      }
+    }
+  }
+}
