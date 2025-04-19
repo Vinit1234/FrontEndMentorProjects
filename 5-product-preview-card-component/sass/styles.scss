@@ -10,22 +10,22 @@
   --neutral-4: hsl(212, 21%, 14%);
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 /* Visually hide h1 but keep it available for screen readers */
 .visually-hidden {
   position: absolute;
-position: absolute !important;
-width: 1px !important;
-height: 1px !important;
-padding: 0 !important;
-margin: -1px !important;
-overflow: hidden !important;
-clip: rect(0,0,0,0) !important;
-white-space: nowrap !important;
-border: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 // Color Scheme
@@ -34,12 +34,11 @@ body {
   color: var(--neutral-3);
 }
 
-.card{
-    background-color: var(--neutral-1);
+.card {
+  background-color: var(--neutral-1);
 }
 
 .content {
-
   .content__heading {
     color: var(--neutral-4);
   }
@@ -49,8 +48,8 @@ body {
   }
 
   .btn-add2cart {
-      background-color: var(--primary-lyt);
-      color: var(--neutral-1);
+    background-color: var(--primary-lyt);
+    color: var(--neutral-1);
 
     &:hover {
       background-color: var(--primary-dark);
@@ -85,7 +84,7 @@ body {
     font-size: 32px;
   }
 
-  .btn-add2cart{
+  .btn-add2cart {
     font-weight: 700;
   }
 }
@@ -103,66 +102,67 @@ body {
 
 .card {
   max-width: 96%;
+  // max-width: 360px;
 
   &__img-container {
     margin: 0;
     img {
-        width: 100%;
-        aspect-ratio: 9/6;
-        block-size: auto;
-        object-fit: cover;
-        object-position: center center;
+      width: 100%;
+      aspect-ratio: 9/6;
+      block-size: auto;
+      object-fit: cover;
+      object-position: center center;
     }
   }
 
-  .content{
+  .content {
     margin: 0;
     padding: 2rem;
 
-    &__heading{
-        margin-top: 0;
+    &__heading {
+      margin-top: 0;
     }
 
-    p{
-        line-height: 1.5rem;
+    p {
+      line-height: 1.5rem;
     }
 
-    .price-box{
-        padding-top: 2rem;
-        .real-price{
-            text-decoration: line-through;
-        }
+    .price-box {
+      padding-top: 2rem;
+      .real-price {
+        text-decoration: line-through;
+      }
     }
 
-
-    .btn-add2cart{
-        width: 96%;
-        height: 3rem;
-        img{
-            padding-right: 0.5rem;
-        }
+    .btn-add2cart {
+      width: 96%;
+      height: 3rem;
+      img {
+        padding-right: 0.5rem;
+      }
     }
   }
 }
 
 // borders
 
-.card{
+.card {
+  border-radius: 10px;
+  // border-radius: 10px;
+  // overflow: hidden;
+
+  &__img-container {
+    img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  .btn-add2cart {
+    border: 0;
     border-radius: 10px;
-    
-    &__img-container{
-        img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-    }
-
-    .btn-add2cart{
-        border: 0;
-        border-radius: 10px;
-    }
+  }
 }
-
 
 .attribution {
   font-size: 11px;
@@ -176,23 +176,22 @@ footer {
   margin-top: 2rem;
 }
 
-
 // ======================================
 // For large screens like Desktop
 
-@media screen and (min-width:600px) {
-  .card{
+@media screen and (min-width: 600px) {
+  .card {
     max-width: 600px;
     display: flex;
 
-    .content{
+    .content {
       width: 50%;
     }
 
-    &__img-container{
+    &__img-container {
       width: 50%;
 
-      img{
+      img {
         aspect-ratio: unset;
         object-fit: cover;
         height: 100%;
