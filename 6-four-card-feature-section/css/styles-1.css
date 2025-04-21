@@ -24,7 +24,8 @@ body {
 /* Typography */
 
 body {
-  /* font-size: 15px; */
+  /* 13px */
+  font-size: 0.866rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -39,16 +40,17 @@ body {
 
 .header__title,
 .header__caption {
-  font-size: 2rem;
+  /* 24px */
+  font-size: 1.6rem;
 }
 
 .header__description {
   font-weight: 400;
-  font-size: 1.2rem;
 }
 
 .card__heading {
   font-weight: 600;
+  font-size: 1.33rem;
 }
 
 /* =============================== */
