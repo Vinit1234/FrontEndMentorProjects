@@ -104,7 +104,15 @@ padding:1rem 2rem;
 margin-top:2rem;
 }
 
+.card__figure{
+  margin: 0;
+}
 
+/* ======================== */
+.card__figure{
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 footer {
