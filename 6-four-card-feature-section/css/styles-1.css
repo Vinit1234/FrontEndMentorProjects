@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap');
+
+:root{
+    --Cyan: hsl(180, 62%, 55%);
+    --Red: hsl(0, 78%, 62%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+
+    font-size: 15px;
+}
+
+*{
+    box-sizing: border-box;
+ }
+
+ body{
+    margin: 0;
+ }
+
+ /* =============================== */
+ /* Typography */
+
+ body{
+    /* font-size: 15px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+ }
+
+.header__title{
+    font-weight: 200;
+}
+
+.header__caption{
+    font-weight: 600;
+    
+}
+
+.header__title, .header__caption {
+    /* 1.875rem 30px */
+    font-size: 2rem;
+}
+
+.header__description{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+ .card__heading{
+    font-weight: 600;
+ }
+
+ /* =============================== */
+/* Color Schemes */
+
+body{
+    color: var(--Grey-400);
+}
+
+.header__caption, .card__heading{
+    color: var(--Grey-500);
+}
+
+.card{
+    border-radius: 4px;
+}
+
+.border-top-cyan{
+    border-top: 4px solid var(--Cyan);
+}
+.border-top-red{
+    border-top: 4px solid var(--Red);
+}
+.border-top-orange{
+    border-top: 4px solid var(--Orange);
+}
+.border-top-blue{
+    border-top: 4px solid var(--Blue);
+}
+
+
+
+footer{
+    margin-top: 2rem;
+}
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
