@@ -83,6 +83,30 @@ body {
   border-top: 4px solid var(--Blue);
 }
 
+
+/* =================================== */
+/* Margins and padding */
+header,main{
+  max-width: 85%;
+  margin: 0 auto 2rem;
+}
+
+.header__title{
+  margin-bottom: 0;
+}
+
+.header__caption{
+  margin: 0;
+}
+
+.card{
+padding:1rem 2rem;
+margin-top:2rem;
+}
+
+
+
+
 footer {
   margin-top: 2rem;
 }
