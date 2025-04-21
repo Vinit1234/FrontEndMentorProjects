@@ -129,3 +129,87 @@ By excluding the href fallback, you can make sure browsers without srcset suppor
         medium-image.png 2x,
         large-image.png 3x"
       >
+
+======================================================
+## Flexbox
+Ref: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+
+
+1.
+https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/#the-minimum-size-gotcha-11
+
+ flex-shrink has a default value of 1, and we haven't removed it, 
+ so the search input should be able to shrink as much as it needs to! 
+ Why is it refusing to shrink?
+
+Here's the deal: The Flexbox algorithm refuses to shrink a child below its minimum size. 
+The content will overflow rather than shrink further, no matter how high we crank flex-shrink!
+
+Text inputs have a default minimum size of 170px-200px 
+(it varies between browsers). That's the limitation we're running into above.
+
+By setting :
+
+min-width: 0px
+
+directly on the Flex child, we tell the Flexbox algorithm to 
+overwrite the “built-in” minimum width. 
+Because we've set it to 0px, the element can shrink as much as necessary.
+
+Proceed with caution
+
+It's worth noting that the built-in minimum size does serve a purpose. It's meant to act as a guardrail, to prevent something even worse from happening.
+
+For example: when we apply min-width: 0px to our text-containing Flex children, things break in an even worse way:
+
+
+2.align-content property:
+
+https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/#wrapping-14
+
+
+======================================================
+## Grid
+
+>> Grid areas
+https://www.joshwcomeau.com/css/interactive-guide-to-grid/#grid-areas-7
+
+>> Sequence of child items when tab i hit:
+https://www.joshwcomeau.com/css/interactive-guide-to-grid/#being-mindful-of-keyboard-users-8
+
+
+>> justify-content vs justify-items in grid
+https://www.joshwcomeau.com/css/interactive-guide-to-grid/#alignment-9
+
+
+>> Justifying and Aligning in Grid:
+https://www.joshwcomeau.com/css/interactive-guide-to-grid/#aligning-rows-10
+
+
+>> Full-Bleed Layout Using CSS Grid
+https://www.joshwcomeau.com/css/full-bleed/
+https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline
+
+
+<main class="wrapper">
+  <h1>Some Heading</h1>
+  <p>Some content and stuff</p>
+  <img class="full-bleed" alt="cute meerkat" src="/meerkat.jpg" />
+</main> 
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr min(42rem, 100%) 1fr;
+  padding-inline: 16px;
+}
+
+.full-bleed {
+  grid-column: 1 / -1;
+}
+-----------------------------------------------------------------
+
+>> Centering child element in Grid using only 2 CSS properties
+.parent{
+  display:grid;
+  place-holder:center;
+}
