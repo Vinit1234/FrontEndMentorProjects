@@ -1,0 +1,18 @@
+
+## Responsive images: srcset
+https://youtu.be/2QYpkrX2N48?si=QVe3Q_fnnYO-BGuL
+
+
+## Flex practice:
+https://flexbox.io/
+
+
+## Grid Practice:
+
+https://cssgrid.io/
+
+https://gridbyexample.com/
+
+https://cssgridgarden.com/
+
+https://www.joshwcomeau.com/css/interactive-guide-to-grid/
