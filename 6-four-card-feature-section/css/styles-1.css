@@ -25,7 +25,7 @@ body {
 
 body {
   /* 13px */
-  font-size: 0.866rem;
+  /* font-size: 0.866rem; */
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -132,7 +132,11 @@ header{
 
 /* ============================================= */
 /* Styles for medium-sized screens like tablets */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
+  .flex-column{
+    align-items: unset;
+  }
+
   .cards{
     display: grid;
     /* grid-template-columns: repeat(6, 1fr);
@@ -166,7 +170,6 @@ header{
     max-width: 300px;
   }
 }
-
 
 
 
