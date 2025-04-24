@@ -126,13 +126,13 @@ header{
 }
 
 .card{
-  max-width: 300px;
+  max-width: 350px;
 }
 
 
 /* ============================================= */
 /* Styles for medium-sized screens like tablets */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 798px) {
   .flex-column{
     align-items: unset;
   }
@@ -146,9 +146,15 @@ header{
                          "card-4 card-4";
     justify-items: center;
     /* align-items:center; */
-    gap:1rem;
+    gap:2rem;
+    max-width: 700px;
+    margin: 0 auto;
   }
   
+  .card{
+    margin-top: 0;
+  }
+
   .card-1{
     /* grid-area: 1/3/2/5; */
     grid-area: card-1;
@@ -166,15 +172,15 @@ header{
     grid-area: card-4;
   }
 
-  .card{
-    max-width: 350px;
-  }
 }
 
 /* ============================================== */
-/* Styles for larger screens like tablets */
-@media only screen and (min-width: 992px) {
+/* Styles for larger screens like desktops */
+@media only screen and (min-width: 1000px) {
   .cards{
+    max-width: 1000px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "card-1 card-2 card-4"
                          "card-1 card-3 card-4";
    align-content: center;                         
