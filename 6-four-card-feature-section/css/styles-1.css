@@ -109,9 +109,24 @@ margin-top:2rem;
 }
 
 /* ======================== */
+
+header{
+  text-align: center;
+}
+
 .card__figure{
   display: flex;
   justify-content: flex-end;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  max-width: 300px;
 }
 
 
