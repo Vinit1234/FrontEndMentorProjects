@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL here](https://your-solution-url.com)
-- [Live site URL here](https://your-live-site-url.com)
+- [Solution URL here](https://github.com/Vinit1234/FrontEndMentorProjects/tree/develop/6-four-card-feature-section)
+- [Live site URL here](https://vinit1234.github.io/FrontEndMentorProjects/6-four-card-feature-section/index.html)
 
 ## My process
 
