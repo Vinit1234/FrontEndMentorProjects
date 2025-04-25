@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap");
+
+:root {
+  --Cyan: hsl(180, 62%, 55%);
+  --Red: hsl(0, 78%, 62%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* =============================== */
+/* Typography */
+
+body {
+  /* 13px */
+  /* font-size: 0.866rem; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.header__title {
+  font-weight: 200;
+}
+
+.header__caption {
+  font-weight: 600;
+}
+
+.header__title,
+.header__caption {
+  /* 24px */
+  font-size: 1.6rem;
+}
+
+.header__description {
+  font-weight: 400;
+}
+
+.card__heading {
+  font-weight: 600;
+  font-size: 1.33rem;
+}
+
+/* =============================== */
+/* Color Schemes */
+
+body {
+  color: var(--Grey-400);
+}
+
+.header__caption,
+.card__heading {
+  color: var(--Grey-500);
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 6px 30px -10px var(--Grey-400);
+}
+
+.border-top-cyan {
+  border-top: 4px solid var(--Cyan);
+}
+.border-top-red {
+  border-top: 4px solid var(--Red);
+}
+.border-top-orange {
+  border-top: 4px solid var(--Orange);
+}
+.border-top-blue {
+  border-top: 4px solid var(--Blue);
+}
+
+
+/* =================================== */
+/* Margins and padding */
+header,main{
+  max-width: 85%;
+  margin: 0 auto 2rem;
+}
+
+.header__title{
+  margin-bottom: 0;
+}
+
+.header__caption{
+  margin: 0;
+}
+
+.card{
+padding:1rem 2rem;
+margin-top:2rem;
+}
+
+.card__figure{
+  margin: 0;
+}
+
+/* ======================== */
+
+header{
+  text-align: center;
+}
+
+.card__figure{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  max-width: 400px;
+}
+
+
+/* ============================================= */
+/* Styles for medium-sized screens like tablets */
+@media only screen and (min-width: 798px) {
+   
+  header {
+    margin-bottom: 3rem;
+  }
+
+/* Typography  */
+  .header__title,
+  .header__caption {
+      /* 30px */
+  font-size: 2rem;
+  }
+
+  .header__description{
+    font-size: 1.125rem;
+  }
+  /* ================================ */
+  
+  .flex-column{
+    align-items: unset;
+  }
+
+    .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: ". card-supervisor card-supervisor ."
+                         "card-team-builder card-team-builder card-karma card-karma"
+                         ". card-calculator card-calculator .";
+    gap:2rem;
+    max-width: 798px;
+    margin: 0 auto;
+  }
+  
+  .card{
+    max-width: unset;
+    margin-top: 0;
+  }
+
+  .card-supervisor{
+    grid-area: card-supervisor;
+  }
+  .card-team-builder{
+    grid-area: card-team-builder;
+  }
+  .card-karma{
+    grid-area: card-karma;
+  }
+  .card-calculator{
+    grid-area: card-calculator;
+  }
+
+}
+
+/* ============================================== */
+/* Styles for larger screens like desktops */
+@media only screen and (min-width: 1200px) {
+  .cards{
+    max-width: 1200px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "card-supervisor card-team-builder card-calculator"
+                         "card-supervisor card-karma card-calculator";
+   align-content: center;                         
+  }
+
+
+  .card-supervisor{
+    grid-area: card-supervisor;
+    align-self: center;
+  }
+  .card-team-builder{
+    grid-area: card-team-builder;
+  }
+  .card-karma{
+    grid-area: card-karma;
+  }
+  .card-calculator{
+    grid-area: card-calculator;
+    align-self: center;
+  }
+
+}
+
+
+footer {
+  margin-top: 2rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
