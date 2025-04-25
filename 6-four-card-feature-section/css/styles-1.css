@@ -133,6 +133,23 @@ header{
 /* ============================================= */
 /* Styles for medium-sized screens like tablets */
 @media only screen and (min-width: 798px) {
+   
+  header {
+    margin-bottom: 3rem;
+  }
+
+/* Typography  */
+  .header__title,
+  .header__caption {
+      /* 30px */
+  font-size: 2rem;
+  }
+
+  .header__description{
+    font-size: 1.125rem;
+  }
+  /* ================================ */
+  
   .flex-column{
     align-items: unset;
   }
