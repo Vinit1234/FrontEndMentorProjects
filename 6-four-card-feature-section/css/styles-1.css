@@ -141,9 +141,9 @@ header{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-template-areas: ". card-1 card-1 ."
-                         "card-2 card-2 card-3 card-3"
-                         ". card-4 card-4 .";
+    grid-template-areas: ". card-supervisor card-supervisor ."
+                         "card-team-builder card-team-builder card-karma card-karma"
+                         ". card-calculator card-calculator .";
     gap:2rem;
     max-width: 798px;
     margin: 0 auto;
@@ -154,17 +154,17 @@ header{
     margin-top: 0;
   }
 
-  .card-1{
-    grid-area: card-1;
+  .card-supervisor{
+    grid-area: card-supervisor;
   }
-  .card-2{
-    grid-area: card-2;
+  .card-team-builder{
+    grid-area: card-team-builder;
   }
-  .card-3{
-    grid-area: card-3;
+  .card-karma{
+    grid-area: card-karma;
   }
-  .card-4{
-    grid-area: card-4;
+  .card-calculator{
+    grid-area: card-calculator;
   }
 
 }
@@ -176,24 +176,24 @@ header{
     max-width: 1200px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "card-1 card-2 card-4"
-                         "card-1 card-3 card-4";
+    grid-template-areas: "card-supervisor card-team-builder card-calculator"
+                         "card-supervisor card-karma card-calculator";
    align-content: center;                         
   }
 
 
-  .card-1{
-    grid-area: card-1;
+  .card-supervisor{
+    grid-area: card-supervisor;
     align-self: center;
   }
-  .card-2{
-    grid-area: card-2;
+  .card-team-builder{
+    grid-area: card-team-builder;
   }
-  .card-3{
-    grid-area: card-3;
+  .card-karma{
+    grid-area: card-karma;
   }
-  .card-4{
-    grid-area: card-4;
+  .card-calculator{
+    grid-area: card-calculator;
     align-self: center;
   }
 
