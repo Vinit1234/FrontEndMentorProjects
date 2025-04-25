@@ -137,9 +137,7 @@ header{
     align-items: unset;
   }
 
-  
-
-  .cards{
+    .cards{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -157,19 +155,15 @@ header{
   }
 
   .card-1{
-    /* grid-area: 1/3/2/5; */
-    /* justify-self: center; */
     grid-area: card-1;
   }
   .card-2{
-    /* grid-area: 2/1/3/4; */
     grid-area: card-2;
   }
   .card-3{
     grid-area: card-3;
   }
   .card-4{
-    /* justify-self: center; */
     grid-area: card-4;
   }
 
