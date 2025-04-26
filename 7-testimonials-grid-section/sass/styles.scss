@@ -44,13 +44,17 @@ body{
 }
 
 // Color schemes ======================================
-@mixin setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg){
+
+@mixin setProfileFontColor($p_name, $p_designation){
     .profile__name{
         color: $p_name;
     }
     .profile__designation{
         color: $p_designation;
     }
+}
+
+@mixin setCardTextColor($txt_bold, $txt_reg){
 
     .card__text--bold{
         color: $txt_bold;
@@ -60,11 +64,12 @@ body{
     }
 }
 
-
 .container{
     > article:nth-child(1){
-        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
-        @include setFontColorOnCard(var(--White), var(--Purple-50), var(--White), var(--Purple-50));
+        // setProfileFontColor($p_name, $p_designation)
+        // setCardTextColor($txt_bold, $txt_reg)
+        @include setProfileFontColor(var(--White), var(--Purple-50)); 
+        @include setCardTextColor(var(--White), var(--Purple-50)) ;
         background-color: var(--Purple-500);
         
         // .profile__name{
@@ -83,22 +88,28 @@ body{
     }
 
     > article:nth-child(2){
-        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
-        @include setFontColorOnCard(var(--White),var(--Grey-200) ,var(--White) ,var(--Grey-100) );
+        // setProfileFontColor($p_name, $p_designation)
+        // setCardTextColor($txt_bold, $txt_reg)
+        @include setProfileFontColor(var(--White),var(--Grey-200));
+        @include setCardTextColor(var(--White) ,var(--Grey-100));
         background-color: var(--Grey-500);
 
     }
 
     > article:nth-child(3), > article:nth-child(5){
-        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
-        @include setFontColorOnCard(var(--Grey-500),var(--Grey-200) ,var(--Grey-500) , var(--Grey-400));
+        // setProfileFontColor($p_name, $p_designation)
+        // setCardTextColor($txt_bold, $txt_reg)
+        @include setProfileFontColor(var(--Grey-500),var(--Grey-200));
+        @include setCardTextColor(var(--Grey-500) , var(--Grey-400));
         background-color: var(--White);
         
     }
 
     > article:nth-child(4){
-        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
-        @include setFontColorOnCard(var(--White), var(--Grey-400), var(--Grey-200), var(--Grey-100));
+        // setProfileFontColor($p_name, $p_designation)
+        // setCardTextColor($txt_bold, $txt_reg)
+        @include setProfileFontColor(var(--White), var(--Grey-400));
+        @include setCardTextColor(var(--Grey-200), var(--Grey-100));
         background-color: var(--Dark-blue);
     }
 }
