@@ -37,3 +37,14 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+# Avoid zip files
+*/**/.zip
+
+#####################################
+# Avoid Parcel packages
+node_modules
+.parcel-cache
+dev
+package.json
+package-lock.json
