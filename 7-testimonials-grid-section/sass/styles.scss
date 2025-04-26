@@ -4,6 +4,20 @@
 *{
     box-sizing: border-box;
     --imported-font-family: "Barlow Semi Condensed", sans-serif;
+
+    // Primary
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+
+    // Neutral
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
 }
 
 
@@ -27,6 +41,66 @@ body{
 .card__text--bold{
     //20px
     font-size: 1.538rem;
+}
+
+// Color schemes ======================================
+@mixin setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg){
+    .profile__name{
+        color: $p_name;
+    }
+    .profile__designation{
+        color: $p_designation;
+    }
+
+    .card__text--bold{
+        color: $txt_bold;
+    }
+    .card__text--regular{
+        color: $txt_reg;
+    }
+}
+
+
+.container{
+    > article:nth-child(1){
+        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
+        @include setFontColorOnCard(var(--White), var(--Purple-50), var(--White), var(--Purple-50));
+        background-color: var(--Purple-500);
+        
+        // .profile__name{
+        //     color: var(--White);
+        // }
+        // .profile__designation{
+        //     color: var(--Purple-50);
+        // }
+
+        // .card__text--bold{
+        //     color: var(--White);
+        // }
+        // .card__text--regular{
+        //     color: var(--Purple-50);
+        // }
+    }
+
+    > article:nth-child(2){
+        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
+        @include setFontColorOnCard(var(--White),var(--Grey-200) ,var(--White) ,var(--Grey-100) );
+        background-color: var(--Grey-500);
+
+    }
+
+    > article:nth-child(3), > article:nth-child(5){
+        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
+        @include setFontColorOnCard(var(--Grey-500),var(--Grey-200) ,var(--Grey-500) , var(--Grey-400));
+        background-color: var(--White);
+        
+    }
+
+    > article:nth-child(4){
+        // setFontColorOnCard($p_name, $p_designation, $txt_bold, $txt_reg)
+        @include setFontColorOnCard(var(--White), var(--Grey-400), var(--Grey-200), var(--Grey-100));
+        background-color: var(--Dark-blue);
+    }
 }
 
 
