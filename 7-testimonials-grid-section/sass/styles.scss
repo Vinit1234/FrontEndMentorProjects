@@ -118,8 +118,17 @@ body{
 
 // Margin and padding ======================================
 .card{
-    padding:1rem;
+    padding:2rem;
+
+    .profile__name{
+        margin-bottom: 0;
+    }
+    .profile__designation{
+        margin-top: 0;
+    }
+
 }
+
 
 
 footer{
