@@ -150,6 +150,27 @@ body{
     place-items: center;
     gap: 2rem;
 
+    .card-1 {
+        position: relative;
+        z-index: 1;
+        .profile{
+            // background: url("/images/bg-pattern-quotation.svg");
+            // background-repeat: no-repeat;
+            // background-position: top right;
+            .quote-img{
+                position: absolute;
+                top:15px;
+                right:  50px;
+                opacity: 80%;
+                z-index: 0;
+            }
+        }
+        .card__text--bold{
+            position: relative;
+            z-index: 1;
+        }
+    }
+
     .card{
         max-width: 480px;
         border-radius: 10px;
