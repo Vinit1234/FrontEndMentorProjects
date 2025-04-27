@@ -117,16 +117,22 @@ body{
 
 
 // Margin and padding ======================================
-.card{
-    padding:2rem;
-
-    .profile__name{
-        margin-bottom: 0;
+body{
+    margin: 0;
+}
+.container{
+    padding: 1rem;
+    .card{
+        padding:2rem;
+    
+        .profile__name{
+            margin-bottom: 0;
+        }
+        .profile__designation{
+            margin-top: 0;
+        }
+    
     }
-    .profile__designation{
-        margin-top: 0;
-    }
-
 }
 
 
