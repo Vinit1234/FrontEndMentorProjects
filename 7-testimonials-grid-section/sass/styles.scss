@@ -46,6 +46,10 @@ body{
 
 // Color schemes ======================================
 
+.container{
+    background-color: var(--Grey-100);
+}
+
 @mixin setProfileFontColor($p_name, $p_designation){
     .profile__name{
         color: $p_name;
@@ -121,15 +125,18 @@ body{
     margin: 0;
 }
 .container{
-    padding: 1rem;
+    padding: 3rem;
     .card{
         padding:2rem;
     
-        .profile__name{
-            margin-bottom: 0;
-        }
-        .profile__designation{
-            margin-top: 0;
+        .profile{
+            margin: 0;
+            .profile__name{
+                margin-bottom: 0;
+            }
+            .profile__designation{
+                margin-top: 0;
+            }
         }
     
     }
