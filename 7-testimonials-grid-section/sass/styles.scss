@@ -142,6 +142,36 @@ body{
     }
 }
 
+// ============================================
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+
+    .card{
+        max-width: 480px;
+        border-radius: 10px;
+
+        .profile{
+            display: flex;
+            align-items: center;
+            gap:1rem;
+
+            .profile__avatar{
+                border-radius:50%;
+            }
+            .border-highlighter{
+                border: 2.5px solid var(--Purple-300);
+            }
+        }
+    }
+
+    
+}
+
+
 
 
 footer{
