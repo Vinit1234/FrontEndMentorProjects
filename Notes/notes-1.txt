@@ -171,6 +171,9 @@ https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/#wrapping-14
 ======================================================
 ## Grid
 
+Grid Layout Guide:
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
 >> Grid areas
 https://www.joshwcomeau.com/css/interactive-guide-to-grid/#grid-areas-7
 
