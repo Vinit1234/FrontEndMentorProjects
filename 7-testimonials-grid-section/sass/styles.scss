@@ -18,13 +18,14 @@
     --Grey-500: hsl(217, 19%, 35%);
     --Dark-blue: hsl(219, 29%, 14%);
     --Black: hsl(0, 0%, 7%);
+    font-size: 13px;
 }
 
 
 // Typography ==============================
 
 body{
-    font-size: 13px;
+    
     font-family: var(--imported-font-family);
     font-weight: 500;
 }
@@ -112,6 +113,12 @@ body{
         @include setCardTextColor(var(--Grey-200), var(--Grey-100));
         background-color: var(--Dark-blue);
     }
+}
+
+
+// Margin and padding ======================================
+.card{
+    padding:1rem;
 }
 
 
