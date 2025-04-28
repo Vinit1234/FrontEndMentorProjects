@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/Vinit1234/FrontEndMentorProjects/tree/develop/7-testimonials-grid-section)
+- [Live Site URL](https://vinit1234.github.io/FrontEndMentorProjects/7-testimonials-grid-section/index.html)
 
 ## My process
 
@@ -53,6 +53,8 @@ Users should be able to:
 With this project, I gained in-depth knowledge on implementation of complex responsive layouts using flex, grid and their properties along with media queries.
 
 I also got an opportunity to implement mixins in SASS using Parcel.
+
+The task of adding a quote image in background using position property added an addition challenge and it was fun.
 
 ### Continued development
 
