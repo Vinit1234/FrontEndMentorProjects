@@ -89,25 +89,9 @@ body{
         @include setProfileFontColor(var(--White), var(--Purple-50)); 
         @include setCardTextColor(var(--White), var(--Purple-50)) ;
         background-color: var(--Purple-500);
-        
-        // .profile__name{
-        //     color: var(--White);
-        // }
-        // .profile__designation{
-        //     color: var(--Purple-50);
-        // }
-
-        // .card__text--bold{
-        //     color: var(--White);
-        // }
-        // .card__text--regular{
-        //     color: var(--Purple-50);
-        // }
     }
 
     > article:nth-child(2){
-        // setProfileFontColor($p_name, $p_designation)
-        // setCardTextColor($txt_bold, $txt_reg)
         @include setProfileFontColor(var(--White),var(--Grey-200));
         @include setCardTextColor(var(--White) ,var(--Grey-100));
         background-color: var(--Grey-500);
@@ -124,8 +108,6 @@ body{
     }
 
     > article:nth-child(4){
-        // setProfileFontColor($p_name, $p_designation)
-        // setCardTextColor($txt_bold, $txt_reg)
         @include setProfileFontColor(var(--White), var(--Grey-400));
         @include setCardTextColor(var(--Grey-200), var(--Grey-100));
         background-color: var(--Dark-blue);
@@ -156,33 +138,14 @@ body{
 }
 
 // Layout for mobile screens ============================================
-.card:nth-child(1){
-    grid-area: one;
-   }
-   .card:nth-child(2){
-    grid-area: two;
-   }
-   .card:nth-child(3){
-    grid-area: three;
-   }
-   .card:nth-child(4){
-    grid-area: four;
-   }
-   .card:nth-child(5){
-    grid-area: five;
-   }
 
 .container{
     display: grid;
-    grid-template-areas: "one"
-                         "two"
-                         "three"
-                         "four"
-                         "five";
+    grid-template-columns: 1fr;
     place-items: center;
     gap: 2rem;
 
-    .card-1 {
+    .card:nth-child(1) {
         position: relative;
         z-index: 1;
         .profile{
