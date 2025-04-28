@@ -134,6 +134,9 @@ By excluding the href fallback, you can make sure browsers without srcset suppor
 ## Flexbox
 Ref: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 
+Best layout ref: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids
+
 
 1.
 https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/#the-minimum-size-gotcha-11
