@@ -1,0 +1,45 @@
+// Put inside abstract folder in _variables.scss file
+
+/* 
+
+Here's a clean and scalable template for your abstracts/_variables.scss file 
+using CSS custom properties (for runtime flexibility) and 
+a few SCSS variables (for compile-time power when needed).
+
+Pro Tips:
+- Use CSS variables (--color-name) in your layout and theming 
+so you can update them via JavaScript or media queries (e.g., dark mode).
+
+- Use SCSS variables ($name) in mixins, calculations, 
+or when generating utility classes at compile time.
+
+- If you use Dart Sass, you're free to combine both, 
+which gives the best of both worlds.
+
+*/
+
+
+// CSS Custom Properties (Global Variables)
+:root {
+    // Color palette
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #282838;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --white: #FAFAFA;
+  
+    // Fonts
+    --base-font: 'Red Hat Display', sans-serif;
+  }
+  
+  // SCSS Variables (for functions/mixins that need them at compile time)
+  $font-base: 'Red Hat Display', sans-serif;
+  $font-weight-bold: 900;
+  $font-weight-regular: 400;
+  
+  $radius-pill: 25px;
+  $transition: 0.3s ease;
+  

@@ -1,0 +1,56 @@
+## 1 Getting started on Frontend Mentor:
+
+Learning outcomes
+    - Get up and running on Frontend Mentor
+    - Set up your development environment
+    - Learn Git and GitHub basics
+    - Learn to work with a design file
+    - Build your first projects
+
+## 2 Building responsive layouts:
+
+Learning outcomes
+    - Understand responsive design principles
+    - Master CSS media queries
+    - Incorporate responsive media and fluid typography
+    - Learn to use Flexbox and CSS Grid
+    - Start cross-browser and cross-device testing
+
+
+
+## 3 JavaScript fundamentals:
+
+Learning outcomes
+    - Understand the DOM and how to interact with it
+    - Create interactive web pages
+    - Tackle client-side form validation
+    - Work with JSON data
+    - Learn how to refactor your code
+
+
+>> Overview:
+
+This path includes six JavaScript-based challenges that will expose you 
+to different challenges and allow you to experience different but common problems 
+that front-end developers face daily.
+
+The path is designed to gradually increase complexity while also providing
+ helpful guidance along the way. However, unlike HTML and CSS, JavaScript has a 
+ steeper learning curve and can sometimes be quite frustrating. 
+ The key to success is to stick with it and take your time.
+
+We recommend using vanilla JavaScript to tackle these challenges and 
+avoid modern JavaScript frameworks like React or Vue at this stage. 
+This will help you grasp the fundamentals and give you a 
+great foundation to build on in later learning paths.
+
+We also recommend that once you've completed a challenge, you take some time 
+to look at solutions posted by other community members. 
+There are literally thousands of different solutions on Frontend Mentor 
+for the challenges on this learning path, 
+and each one can give you new ideas and approaches for solving the same problem.
+
+If you have the time, it's always worth trying a different approach to a solution 
+you've already completed. 
+Think about how this new approach is better than your previous attempt, 
+the ways it is worse, and what lessons you learned from doing it a second time.

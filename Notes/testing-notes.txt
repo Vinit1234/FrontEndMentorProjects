@@ -1,0 +1,32 @@
+## Link for tools:
+
+>> Testing tools
+https://www.browserstack.com/
+https://www.lambdatest.com/
+
+>> Specialist Browser
+https://responsively.app/
+https://polypane.app/
+
+
+
+
+Here are some ideas of how you might go about testing your site on different devices and browsers to get you started:
+
+    1. Use testing tools: There are tools online that let you see how your site looks on different devices and browsers without owning every single one. Some popular options include BrowserStack and LambdaTest. LambdaTest has a free tier, so it’s worth signing up to play around with it and run some tests on your challenge solutions.
+
+    2. Use browser device emulators: Each browser has a device emulator in the developer tools. This is a quick and easy way to test your site's layout on different screen sizes.
+
+    3. Use specialist browsers: Responsively (free) and Polypane (paid) are specialist browsers that help you simultaneously view your project across different viewports. This is very useful when building and testing responsive sites!
+
+    4. Check on real devices: Whenever possible, check your site on actual devices, especially common ones among your audience (when you start building production sites). This can include different smartphones, tablets, laptops, and desktops.
+    Focus on popular browsers: Ensure your site works well on major browsers like Chrome, Firefox, Safari, and Edge.
+
+
+## Best practices
+
+    1. Start early: Begin testing early in your development process. This makes it easier to spot and fix issues.
+    2. Don’t skip screen ranges: Test across the full range of screen sizes. Many people ignore middle ranges, like tablet sizes.
+    3. Keep updating: New browser versions and devices are released constantly. Regularly update your testing checklist to include the latest, most popular technologies.
+
+Cross-browser and cross-device testing ensures visitors get the best possible experience no matter how or where they access your site. It's about inclusivity – making your digital space welcoming to everyone, everywhere.

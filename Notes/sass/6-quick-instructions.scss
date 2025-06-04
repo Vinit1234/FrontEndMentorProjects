@@ -1,0 +1,12 @@
+Quick Instructions:
+
+1. Each partial (like _variables.scss, _buttons.scss, etc.) should be inside its appropriate folder.
+
+2. Your abstracts/index.scss should forward its contents like this:
+
+// abstracts/index.scss
+@forward 'variables';
+@forward 'mixins';
+@forward 'functions';
+
+3. Ensure your build tool (like Dart Sass, Vite, Webpack, etc.) supports @use/@forward—Dart Sass is recommended.

@@ -1,0 +1,10 @@
+| Folder        | Purpose                                              |
+| ------------- | ---------------------------------------------------- |
+| `abstracts/`  | Global tokens (colors, mixins, variables, functions) |
+| `base/`       | Default styling: resets, typography, body styles     |
+| `layout/`     | Grid system, global containers, structural layout    |
+| `components/` | Reusable components like buttons, cards, navbars     |
+| `utils/`      | Utility classes, media queries, helper functions     |
+| `pages/`      | Page-specific SASS, e.g. `_home.scss`, `_about.scss` |
+| `themes/`     | Theming logic if supporting multiple themes          |
+| `main.scss`   | Imports everything in correct order                  |
