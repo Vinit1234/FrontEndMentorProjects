@@ -8,7 +8,7 @@
   <title>Frontend Mentor | Article preview component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-   <link rel="stylesheet" href="sass/main.scss">
+  <link rel="stylesheet" href="sass/main.scss">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <main>
     <article class="card">
       <figure class="card__fig">
-        <img src="./images/drawers.jpg" loading="lazy" alt="">
+        <img class="card__fig__img" src="./images/drawers.jpg" loading="lazy" alt="">
       </figure>
       <div class="card__text">
         <h1>Shift the overall look and feel by adding these wonderful
@@ -24,27 +24,47 @@
         <p>Ever been in a room and felt like something was missing? Perhaps
           it felt slightly bare and uninviting. I’ve got some simple tips
           to help you make any room feel complete.</p>
-      </div>
-      <div class="card__author-details-bar">
-        <figure class="card__author-details-bar__fig"><img src="./images/avatar-michelle.jpg"
-            alt="Michelle's profile picture"></figure>
-        <div class="card__author-details-bar__name-date">
-          <p class="author-name">Michelle Appleton</p>
-          <p class="article-date">28 Jun 2020</p>
+
+        <div class="card__text__footer">
+          <div class="card__text__footer__author-details">
+            <figure class="card__text__footer__author-details__fig"><img src="./images/avatar-michelle.jpg"
+                alt="Michelle's profile picture"></figure>
+
+            <div class="card__text__footer__author-details__text">
+              <p class="author-name">Michelle Appleton</p>
+              <p class="article-date">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="share"><img src="./images/icon-share.svg" alt="Share article link"></div>
         </div>
-        <div class="share"><img src="./images/icon-share.svg" alt="Share article link"></div>
       </div>
+
+      <!-- <div class="card__footer">
+        <div class="card__footer__author-details">
+          <figure class="card__footer__author-details__fig"><img src="./images/avatar-michelle.jpg"
+            alt="Michelle's profile picture"></figure>
+            
+          <div class="card__footer__author-details__text">
+            <p class="author-name">Michelle Appleton</p>
+            <p class="article-date">28 Jun 2020</p>
+          </div>
+        </div>
+        
+        <div class="share"><img src="./images/icon-share.svg" alt="Share article link"></div>
+      </div> -->
     </article>
+
+    
   </main>
-
-
-
+  
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/Vinit1234">Vinit Sakhare</a>.
-    </div>
+    </div>    
   </footer>
+
 
 </body>
 
