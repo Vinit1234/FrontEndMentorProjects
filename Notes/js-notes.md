@@ -345,3 +345,382 @@ btn.addEventListener("click", () => {
   }
 });
 ```
+
+## Events
+[See more events here](https://en.wikipedia.org/wiki/DOM_event)
+
+`Event:`	Event is fired
+- `click:`	When you press down and release the primary mouse button. Used to track buttons and clickable elemennts
+
+- `mousemove:`	When you move the mouse cursor
+- `mouseover:`	When you move the mouse cursor over an element. It's like the CSS hover state
+- `mouseout:`	When your mouse cursor moves outside the boundaries of an element
+- `dblclick:`	When you click twice
+- `DOMContentLoaded:`	When the DOM content is fully loaded
+- `keydown:`	When you press a key on your keyboard
+- `keyup:`	When you release a key on your keyboard
+- `submit:`	When a form is submitted
+
+
+## on[event] vs addEventListener()
+
+- the addEventListener() method also allows you to attach multiple listeners to the same element as follows:
+
+```html
+<body>
+  <button id="myBtn">Click Me!</button>
+  <script>
+    const myBtn = document.querySelector('#myBtn');
+
+    myBtn.addEventListener('click', handleClick);
+
+    myBtn.addEventListener('click', handleClickTwo);
+
+    function handleClick() {
+      console.log('Run from handleClick function');
+    }
+
+    function handleClickTwo() {
+      console.log('Run from handleClickTwo function');
+    }
+  </script>
+</body>
+```
+
+When you click on the button above, JavaScript will execute both event listeners.
+
+This is not possible with the onclick property because you can only assign one function as a reference at a time.
+
+
+
+## Removing listeners
+
+If you've added an event handler using addEventListener(), you can remove it again using the removeEventListener() method. For example, this would remove the changeBackground() event handler:
+js
+
+```js 
+btn.removeEventListener("click", changeBackground);
+```
+
+Event handlers can also be removed by passing an AbortSignal to addEventListener() and then later calling abort() on the controller owning the AbortSignal. For example, to add an event handler that we can remove with an AbortSignal:
+
+```js
+
+const controller = new AbortController();
+
+btn.addEventListener("click",
+  () => {
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    document.body.style.backgroundColor = rndCol;
+  },
+  { signal: controller.signal } // pass an AbortSignal to this handler
+);
+```
+Then the event handler created by the code above can be removed like this:
+
+```js
+
+controller.abort(); // removes any/all event handlers associated with this controller
+```
+For simple, small programs, cleaning up old, unused event handlers isn't necessary, but for larger, more complex programs, it can improve efficiency. Also, the ability to remove event handlers allows you to have the same button performing different actions in different circumstances: all you have to do is add or remove handlers.
+
+## Event object properties
+
+Some event objects add extra properties that are relevant to that particular type of event. For example, the keydown event fires when the user presses a key. Its event object is a KeyboardEvent, which is a specialized Event object with a key property that tells you which key was pressed:
+html
+
+```html
+<input id="textBox" type="text" />
+<div id="output"></div>
+```
+
+```js
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+textBox.addEventListener("keydown", (event) => {
+  output.textContent = `You pressed "${event.key}".`;
+});
+```
+## Preventing Default Behavoir
+
+As a developer, you want to prevent the submission to the server and give an error message saying what's wrong and what needs to be done to put things right. Some browsers support automatic form data validation features, but since many don't, you are advised to not rely on those and implement your own validation checks. Let's look at an example.
+
+First, a simple HTML form that requires you to enter your first and last name:
+html
+```html
+<form>
+  <div>
+    <label for="fname">First name: </label>
+    <input id="fname" type="text" />
+  </div>
+  <div>
+    <label for="lname">Last name: </label>
+    <input id="lname" type="text" />
+  </div>
+  <div>
+    <input id="submit" type="submit" />
+  </div>
+</form>
+<p></p>
+```
+
+Now some JavaScript — here we implement a very simple check inside a handler for the submit event (the submit event is fired on a form when it is submitted) that tests whether the text fields are empty. If they are, we call the preventDefault() function on the event object — which stops the form submission — and then display an error message in the paragraph below our form to tell the user what's wrong:
+```js
+
+const form = document.querySelector("form");
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+const para = document.querySelector("p");
+
+form.addEventListener("submit", (e) => {
+  if (fname.value === "" || lname.value === "") {
+    e.preventDefault();
+    para.textContent = "You need to fill in both names!";
+  }
+});
+```
+Obviously, this is pretty weak form validation — it wouldn't stop the user from validating the form with spaces or numbers entered into the fields, for example — but it is OK for example purposes
+
+
+## Retrieving elements from the DOM
+
+The most efficient way of selecting an element is by ID, so you should favor using IDs on your DOM elements where possible.
+
+ `getElementById()` is extremely fast because all elements are indexed by their ID in the DOM. `querySelectorAll()` is slower because it has to traverse the DOM tree to make sure it finds all the elements that match the selector.
+
+ We should always be mindful of how we are retrieving elements from the DOM. We should aim to be as efficient as possible:
+
+- Use `getElementById()` where possible.
+- Reduce the size of the DOM tree by searching it from a previously retrieved element rather than document.
+
+- Storing elements in variables
+
+Once you have retrieved the elements you want to work with, you should store them in variables to modify them without having to re-retrieve them from the DOM. Remember: DOM traversal is relatively inefficient and should be done as little as possible.
+
+
+## Reading and modifying the tree
+[See more on DOM Manipulation in this link](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces)
+
+
+```html
+<html lang="en">
+  <head>
+    <title>My Document</title>
+  </head>
+  <body>
+    <input type="button" value="Change this document." />
+    <h2>Header</h2>
+    <p>Paragraph</p>
+  </body>
+</html>
+```
+```js
+document.querySelector("input").addEventListener("click", () => {
+  // document.getElementsByTagName("h2") returns a NodeList of the <h2>
+  // elements in the document, and the first is number 0:
+  const header = document.getElementsByTagName("h2").item(0);
+
+  // The firstChild of the header is a Text node:
+  header.firstChild.data = "A dynamic document";
+
+  // Now header is "A dynamic document".
+
+  // Access the first paragraph
+  const para = document.getElementsByTagName("p").item(0);
+  para.firstChild.data = "This is the first paragraph.";
+
+  // Create a new Text node for the second paragraph
+  const newText = document.createTextNode("This is the second paragraph.");
+
+  // Create a new Element to be the second paragraph
+  const newElement = document.createElement("p");
+
+  // Put the text in the paragraph
+  newElement.appendChild(newText);
+
+  // Put the paragraph on the end of the document by appending it to
+  // the body (which is the parent of para)
+  para.parentNode.appendChild(newElement);
+});
+```
+
+## Creating a tree
+
+You can create the above tree entirely in JavaScript too.
+```js
+
+const root = document.createElement("html");
+root.lang = "en";
+
+const head = document.createElement("head");
+const title = document.createElement("title");
+title.appendChild(document.createTextNode("My Document"));
+head.appendChild(title);
+
+const body = document.createElement("body");
+const header = document.createElement("h1");
+header.appendChild(document.createTextNode("Header"));
+const paragraph = document.createElement("p");
+paragraph.appendChild(document.createTextNode("Paragraph"));
+body.appendChild(header);
+body.appendChild(paragraph);
+
+root.appendChild(head);
+root.appendChild(body);
+```
+
+> Other example: 
+
+The following code is a modified version in which each cell of the second column is hidden and each cell of the first column is changed to have a red background. Note that the style property was set directly.
+
+```js
+const myBody = document.getElementsByTagName("body")[0];
+const myTable = myBody.getElementsByTagName("table")[0];
+const myTableBody = myTable.getElementsByTagName("tbody")[0];
+const myRow = myTableBody.getElementsByTagName("tr")[1];
+const myCell = myRow.getElementsByTagName("td")[1];
+
+// first item element of the childNodes list of myCell
+const myCellText = myCell.childNodes[0];
+
+// content of currentText is the data content of myCellText
+const currentText = document.createTextNode(myCellText.data);
+myBody.appendChild(currentText);
+```
+
+## Some more DOM manipulation methods
+
+- `element.classList.replace('oldClass', 'newClass');`
+```js
+const p = document.querySelector('.myParagraph');
+
+// add a class to the element
+p.classList.add('color-primary');
+
+// replace a class
+p.classList.replace('color-primary', 'color-secondary');
+
+// remove a class
+p.classList.remove('color-secondary');
+```
+
+- At times, you might need to apply CSS directly to the DOM element you selected.
+
+```js
+const p = document.querySelector('.myParagraph');
+
+p.style.fontWeight = '700'; // set font weight
+p.style.textTransform = 'uppercase'; // set to uppercase
+p.style.color = '#007bff'; // set color
+p.style.border = '1px solid black';
+
+```
+If you want to remove an element, you can call the remove() method from the element you want to remove.
+`element.remove()`
+
+
+- element.insertBefore(new_elem, existing_elem)
+
+```js
+
+let p2 = document.createElement('p');
+
+p2.innerText = 'The second paragraph';
+
+let body = document.querySelector('body');
+let p1 = document.querySelector('#first');
+
+body.insertBefore(p2, p1);
+
+```
+- You use the append() method to insert an element at the last position, and if you want to control the position, use the insertBefore() method.
+
+- use both setAttribute() and getAttribute() methods to interact with any HTML attributes.
+
+- If you want to delete an attribute, use the removeAttribute() method.
+
+
+```js
+// Select the div
+let myDiv = document.querySelector('#intro');
+
+// Access the dataset property
+console.log(myDiv.dataset.session) // 2022
+
+// Use camelCase when your data attribute is more than one word
+console.log(myDiv.dataset.attributeTheme) // light
+
+```
+## Favour style updates rather than modifying the DOM
+
+Often, we want to add or remove some elements from the screen. Adding and removing DOM elements is less efficient than simply setting display: none or display: block on an element that already exists in the DOM tree.
+
+You can also modify an element’s styles by adding or removing classes that have CSS styles associated with them in a stylesheet:
+
+```js
+button.className = 'hidden'
+```
+However, this will override existing classes, so you must be careful not to remove classes added for base styling. Instead, we can use the classList property, which has the following methods:
+
+    add: add a class (if it’s not already there).
+    remove: remove a class (if it is already there).
+    toggle: remove the class if it’s there and add it if not.
+
+This makes managing classes with JavaScript a lot easier:
+
+```js
+button.className = 'active' // className is 'active'
+button.classList.add('hidden') // className is 'active hidden'
+button.classList.add('hidden') // className is still 'active hidden'
+button.classList.toggle('active') // className is 'hidden'
+button.classList.toggle('alert') // className is 'hidden alert'
+button.classList.remove('hidden') // className is 'alert'
+```
+
+## Modifying Styles
+
+
+```js
+// Select div
+const div = document.querySelector('div');
+
+// Apply style to div
+div.setAttribute('style', 'text-align: center');
+```
+
+**NOTE**: However, this will remove all existing inline styles from the element. Since this is likely not the intended effect, it is better to use the style attribute directly.
+
+```js
+div.style.height = '100px';
+div.style.width = '100px';
+div.style.border = '2px solid black';
+
+// Make div into a circle and vertically center the text
+div.style.borderRadius = '50%';
+div.style.display = 'flex';
+div.style.justifyContent = 'center';
+div.style.alignItems = 'center';
+```
+
+
+## Function definition vs arrow function
+
+```js
+button.addEventListener('click', function() {
+  console.log(this); // `this` refers to `button`
+});
+
+button.addEventListener('click', () => {
+  console.log(this); // `this` is undefined with arrow functions
+});
+```
+
+If you want to access the button with an arrow function, you must pass an argument to the event listener, which refers to the event itself.
+
+```js
+button.addEventListener('click', (event) => {
+  console.log(event.target); // `event.target` is the element that was clicked
+  console.log(event.currentTarget); // `event.currentTarget` is `button`
+});
+```
