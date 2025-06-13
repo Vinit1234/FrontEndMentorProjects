@@ -17,7 +17,7 @@
   <main>
     <article class="card">
       <figure class="card__fig">
-        <img class="card__fig__img" src="./images/drawers.jpg" loading="lazy" alt="">
+        <img class="card__fig__img" src="./images/drawers.jpg" loading="lazy" alt="Modern drawers beside a plant">
       </figure>
       <div class="card-content">
 
@@ -42,16 +42,20 @@
 
             <div class="card__social-links-box hidden">
               <span class="share-text">Share</span>
-              <a href="#"><img src="./images/icon-facebook.svg" alt="facebook link"></a>
-              <a href="#"><img src="./images/icon-twitter.svg" alt="twitter link"></a>
-              <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest link"></a>
+              <a href="#"><img src="./images/icon-facebook.svg" alt="facebook link" aria-label="Share on Facebook"></a>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="twitter link" aria-label="Share on Twitter"></a>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest link" aria-label="Share on Pinterest"></a>
             </div>
 
-            <button type="button" class="share"><img src="./images/icon-share.svg" alt="Share article link"></button>
+            <button type="button" 
+                    class="share"
+                    aria-label="Share this article"
+                    aria-expanded="false"
+                    aria-controls="share-links">
+                    <img src="./images/icon-share.svg" alt="Share article link">
+            </button>
+
           </footer>
-
-
-        <!-- </div> -->
 
       </div>
 
