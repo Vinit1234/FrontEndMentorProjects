@@ -1,0 +1,6 @@
+@mixin font-base($weight: 400) {
+    font-family: var(--font-family);
+    font-weight: $weight;
+    font-style: normal;
+  }
+  

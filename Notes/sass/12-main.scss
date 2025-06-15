@@ -1,0 +1,12 @@
+// In main.scss, you would import like this:
+
+
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'abstracts/responsive';
+
+@use 'base/typography';
+@use 'components/buttons';
+@use 'components/card';
+@use 'layout/header';
+@use 'layout/footer';

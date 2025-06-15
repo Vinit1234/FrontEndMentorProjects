@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  &__title {
+    @include font-base(var(--font-weight-bold));
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--slate-900);
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    @include font-base();
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    color: var(--slate-600);
+  }
+
+  @include respond(md) {
+    padding: 3rem;
+    text-align: left;
+  }
+}

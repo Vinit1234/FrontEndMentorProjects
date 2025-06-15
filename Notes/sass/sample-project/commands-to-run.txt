@@ -1,0 +1,9 @@
+1. Run the following command in your terminal (inside the project folder):
+
+> sass sass/main.scss dist/style.css
+
+OR
+
+2. Watch changes:
+
+> sass --watch sass/main.scss:dist/style.css

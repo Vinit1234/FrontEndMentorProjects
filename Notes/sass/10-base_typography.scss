@@ -1,0 +1,5 @@
+h1 {
+    @include font-base($font-weight-bold);
+    @include heading(2rem, 3rem); // clamp(2rem, ..., 3rem)
+  }
+  

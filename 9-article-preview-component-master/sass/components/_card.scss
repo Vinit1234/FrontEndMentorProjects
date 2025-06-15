@@ -1,0 +1,81 @@
+.card {
+  max-width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card__fig {
+  margin: 0;
+  &__img {
+    width: 100%;
+  }
+}
+
+.card__text {
+  padding: 1rem;
+}
+
+// card footer ======================
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.card__author {
+  display: flex;
+}
+
+.card__author-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card__details {
+  margin-left: 2rem;
+}
+
+.card__author-name {
+  margin: 0;
+}
+
+.card__date {
+  margin-top: 0;
+}
+
+.share {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--gray-200);
+  opacity: 0.75;
+  border: none;
+  margin-left: auto;
+}
+
+// Social links box ==================
+
+.card__social-links-box {
+  background-color: var(--gray-900);
+}
+
+.card__social-links-box {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.card__social-links-box > .share-text {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
