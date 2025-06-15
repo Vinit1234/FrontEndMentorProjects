@@ -53,10 +53,12 @@ body {
 .card__author-name {
   color: var(--gray-900);
   font-weight: bold;
+  margin: 0;
 }
 
 .card__date {
   color: var(--gray-400);
+   margin-block-start: 0;
 }
 
 /* body {
@@ -112,13 +114,6 @@ body {
   margin-inline-start: 2rem;
 }
 
-.card__author-name {
-  margin: 0;
-}
-
-.card__date {
-  margin-top: 0;
-}
 
 .share {
   background-color: var(--gray-200);
@@ -186,7 +181,7 @@ body {
     border-radius: 0.5rem;
     width: fit-content;
     height: auto;
-    position: absolute;
+    /* position: absolute; */
     top: -50px;
     left: 310px;
   }

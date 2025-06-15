@@ -118,3 +118,14 @@ The following can be improved:<br>
     max-width: 480px;
   }
 ```
+
+
+## Margin
+
+- Use logical properties (e.g., inline-start instead of left) to support different reading directions and improve internationalization
+
+Physical property	-----  Logical property <br>
+margin-top----------------margin-block-start <br>
+margin-bottom	------------margin-block-end <br>
+margin-left	--------------margin-inline-start <br>
+margin-right--------------margin-inline-end <br>
