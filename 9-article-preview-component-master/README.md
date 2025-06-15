@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://github.com/Vinit1234/FrontEndMentorProjects/tree/develop/9-article-preview-component-master)
 - [Live Site URL](https://vinit1234.github.io/FrontEndMentorProjects/9-article-preview-component-master/index.html)
 
 ## My process

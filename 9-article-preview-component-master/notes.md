@@ -52,19 +52,19 @@ So unless the outer container (`.card`) allows overflow and sets positioning, it
       top: -50px;
       width: fit-content;
       height: auto;
-      border-radius: 8px;
+      border-radius: 0.5rem;
     }
 
     .card__social-links-box::after {
       content: "";
       position: absolute;
       right: 40%;
-      bottom: -8px;
+      bottom: -0.5rem;
       height: 0;
       width: 0;
-      border-top: 8px solid var(--gray-900);
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
+      border-top: 0.5rem solid var(--gray-900);
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
     }
   }
 
@@ -79,3 +79,42 @@ So unless the outer container (`.card`) allows overflow and sets positioning, it
 `overflow: visible`
 → Ensures that if .card__social-links-box overflows .card’s boundaries (e.g. pops above it), it won’t get clipped.
 → Without this, some browsers might clip or hide overflowing content.
+
+## declaration-property-unit-disallowed-list:
+
+- Consider using relative units (em, rem) instead of absolute units (px, pt) to support resizing and improve accessibility.
+<br>*Incorrrect:*<br>
+`font-size: 13px;`
+
+## no-duplicate-selectors:
+
+- Consolidate duplicate selectors to maintain an organized and efficient stylesheet.
+
+## frontend-mentor/use-logical-properties
+
+- Use logical properties (e.g., `inline-start` instead of `left`) to support different reading directions and improve internationalization.
+<br>*Incorrect:*<br>
+`margin-left: 2rem;`
+
+## frontend-mentor/encourage-css-functions
+
+- Consider using CSS functions like calc(), min(), and clamp() to create more responsive and flexible layouts that adapt to different viewport sizes.
+The following can be improved:<br>
+`font-size: 13px;`
+
+## frontend-mentor/encourage-css-variables
+
+- Use CSS custom properties (variables) to centralize values, improve consistency, and make site-wide changes easier to implement.
+<br>*Incorrect:*<br>
+`background-color: #fff;`
+
+## media-feature-range-notation
+
+- Consider using prefix notation for media queries (e.g., min-width: instead of width >=) for better browser compatibility. 
+<br>*Incorrect:*
+```css
+@media screen and (width >= 480px) {
+  article {
+    max-width: 480px;
+  }
+```
