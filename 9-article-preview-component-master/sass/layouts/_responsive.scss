@@ -1,7 +1,8 @@
 // Responsiveness =============
 @media screen and (min-width: 480px) {
   .card {
-    max-width: 480px;
+    // max-width: 480px;
+    max-width: 30rem;
   }
 }
 
@@ -11,7 +12,8 @@
   }
   .card {
     display: flex;
-    max-width: 730px;
+    // max-width: 730px;
+    max-width: 45.625rem;
   }
 
   .card__fig__img {
@@ -20,7 +22,8 @@
   }
 
   .card__text {
-    margin-left: 1rem;
+    // margin-left: 1rem;
+    margin-inline-start: 1rem;
   }
 
   .card {
@@ -33,19 +36,19 @@
       top: -50px;
       width: fit-content;
       height: auto;
-      border-radius: 8px;
+      border-radius: 0.5rem;
     }
 
     .card__social-links-box::after {
       content: "";
       position: absolute;
       right: 40%;
-      bottom: -8px;
+      bottom: -0.5rem;
       height: 0;
       width: 0;
-      border-top: 8px solid var(--gray-900);
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
+      border-top: 0.5rem solid var(--gray-900);
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
     }
   }
 }
