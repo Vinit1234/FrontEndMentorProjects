@@ -1,0 +1,51 @@
+// Responsiveness =============
+@media screen and (min-width: 480px) {
+  .card {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    padding: 1rem;
+  }
+  .card {
+    display: flex;
+    max-width: 730px;
+  }
+
+  .card__fig__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__text {
+    margin-left: 1rem;
+  }
+
+  .card {
+    position: relative;
+    overflow: visible;
+
+    .card__social-links-box {
+      position: absolute;
+      left: 310px;
+      top: -50px;
+      width: fit-content;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card__social-links-box::after {
+      content: "";
+      position: absolute;
+      right: 40%;
+      bottom: -8px;
+      height: 0;
+      width: 0;
+      border-top: 8px solid var(--gray-900);
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
+  }
+}
